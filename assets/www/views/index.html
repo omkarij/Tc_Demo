@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="target-densitydpi=medium-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<title>Embedded Sql Example</title>
+
+<script type="text/javascript" charset="utf-8" src="../js/cordova-2.7.0.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../models/index_model.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../controllers/index_con.js"></script>
+
+</head>
+<body onload="onBodyLoad()">
+<input id="txFirstName" type="text" placeholder="FirstName">
+<input id="txLastName" type="text" placeholder="Last Name">
+<input type="button" value="Add record" onclick="AddValueToDB()">
+<input type="button" value="Refresh" onclick="ListDBValues()"> <br>
+<br>
+<span style="font-weight:bold;">Currently stored values:</span>
+<span id="lbUsers"></span>
+</body>
+</html> 
